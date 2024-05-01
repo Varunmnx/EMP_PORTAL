@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login/login.tsx';
 import Register from './Components/Register/register.tsx';
 
+
+enum AppRoutes {
+  LOGIN = '/',
+  REGISTER = '/register',
+}
 function App() {
   
 
@@ -11,8 +16,8 @@ function App() {
     
     <Router>
     <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route path={AppRoutes.LOGIN} element={<Login />} />
+      <Route path={AppRoutes.REGISTER} element={<Register />} />
     </Routes>
   </Router>
      
