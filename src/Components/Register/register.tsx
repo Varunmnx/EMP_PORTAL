@@ -1,5 +1,5 @@
 import "./register.css";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const RegisterForm = () => {
@@ -13,7 +13,7 @@ const RegisterForm = () => {
         </div>
         <div className="input-box">
           <input type="number" placeholder="Phone" required />
-          <FaUser />
+          <FaPhoneAlt />
         </div>
         <div className="input-box">
           <input type="email" placeholder="Email" />
