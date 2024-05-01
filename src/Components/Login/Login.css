@@ -1,11 +1,14 @@
 .wrapper {
   width: 420px;
-  background: gray;
+  background: "/workspaces/EMP_PORTAL/src/Components/Login/background.jpg";
   color: #fff;
   border-radius: 10px;
 }
 
 .wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
 }
 .wrapper h1 {
