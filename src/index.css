@@ -2,12 +2,7 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0px;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  background-image: url("./background.jpg");
-  background-size: cover;
-  background-position: center;
 }
