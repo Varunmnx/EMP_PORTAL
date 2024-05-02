@@ -1,0 +1,37 @@
+/* Dashboard.css */
+body {
+    background-color: #fff;
+    background: turquoise;
+}
+.dashboard-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+.dashboard-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+.dashboard-item svg {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+.dashboard-item h2 {
+    margin-bottom: 5px;
+  }
+  
+.dashboard-item p {
+    color: #666;
+  }
+  
+.dashboard-item:last-child {
+    margin-bottom: 0;
+  }
+  

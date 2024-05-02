@@ -5,12 +5,15 @@ import Login from './Components/Login/login.tsx';
 import Register from './Components/Register/register.tsx';
 import { DashboardLayout } from './Components/Layouts'
 import { Home } from './Components/pages';
+import Master_Dashboard from './Components/Dashboards/master_dashboard.tsx';
+
 
 enum AppRoutes {
   LOGIN = '/',
   REGISTER = '/register',
   DASHBOARD = '/dashboard',
-  HOME = '/home'
+  HOME = '/home',
+  MASTER = '/master_dashboard',
 }
 function App() {
   
@@ -24,6 +27,7 @@ function App() {
       <Route path={AppRoutes.DASHBOARD} element={<DashboardLayout />}>
           <Route index path={AppRoutes.DASHBOARD + AppRoutes.HOME} element={<Home/>} />
       </Route>
+      <Route path={AppRoutes.MASTER} element={<Master_Dashboard />} />
     </Routes>
   </Router>
      
