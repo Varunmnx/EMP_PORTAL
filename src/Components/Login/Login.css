@@ -113,3 +113,14 @@
 .login-btn {
   margin-top: 20px;
 }
+
+.container {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
