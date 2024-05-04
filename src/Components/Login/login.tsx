@@ -1,11 +1,21 @@
+import { useNavigate } from 'react-router-dom' ;
 import "./Login.css";
 import { FaUser, FaLock } from "react-icons/fa"; 
 
+
 const LoginForm = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Perform login logic here...
+
+    // Redirect to the dashboard page after successful login
+    navigate('/master_dashboard');
+  };
   return (
     <div className="container">
         <div className="wrapper">
-          <form  className="form" action="<Master_Dashboard />">
+          <form  className="form" action="">
             <h1>Login</h1>
             <div className="input-box">
               <input type="text" placeholder="Username" required />
@@ -22,7 +32,7 @@ const LoginForm = () => {
               </label>
             </div>
 
-            <button type="submit" className="login-btn">Log In</button>
+            <button type="submit" className="login-btn" onClick={handleLogin}>Log In</button>
 
             <div className="register-link">
               <p>
