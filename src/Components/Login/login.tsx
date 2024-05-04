@@ -5,7 +5,7 @@ const LoginForm = () => {
   return (
     <div className="container">
         <div className="wrapper">
-          <form  className="form" action="">
+          <form  className="form" action="<Master_Dashboard />">
             <h1>Login</h1>
             <div className="input-box">
               <input type="text" placeholder="Username" required />

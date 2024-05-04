@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const RegisterForm = () => {
   return (
+    <div className="container">
     <div className="wrapper">
       <form  className="form" action="">
         <h1>Register</h1>
@@ -37,6 +38,7 @@ const RegisterForm = () => {
           </p>
         </div>
       </form>
+    </div>
     </div>
   );
 };
