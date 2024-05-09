@@ -24,8 +24,11 @@ export default function DashboardLayout() {
           size="sm"
         />
           <FlexBox container alignItems='center' backgroundColor='green' justifyContent='center' width={"100%"} height={"100%"} >
-            <div  style={{width: "100%", height: "calc(100%-10px)",backgroundColor: "blue" }}>
-               <Text size="lg">Logo</Text>
+            <div  style={{width: "25%", height: "calc(100%-10px)",backgroundColor: "blue" }}>
+              <div style={{width: "15%", height:"100%"}}>
+                <img src="/shapelined-_JBKdviweXI-unsplash.jpg" alt="" />
+              </div>
+               <Text size="lg">Management Company</Text>
            </div>
         </FlexBox>
 
