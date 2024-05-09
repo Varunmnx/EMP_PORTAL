@@ -8,7 +8,7 @@ import { Home } from './Components/pages';
 import Master_Dashboard from './Components/Dashboards/master_dashboard.tsx';
 
 
-enum AppRoutes {
+export enum AppRoutes {
   LOGIN = '/',
   REGISTER = '/register',
   DASHBOARD = '/dashboard',
