@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom' ;
 import "./Login.css";
 import { FaUser, FaLock } from "react-icons/fa"; 
+import { AppRoutes } from '../../App';
 
 
 const LoginForm = () => {
@@ -10,7 +11,7 @@ const LoginForm = () => {
     // Perform login logic here...
 
     // Redirect to the dashboard page after successful login
-    navigate('/master_dashboard');
+    navigate(AppRoutes.DASHBOARD);
   };
   return (
     <div className="container">

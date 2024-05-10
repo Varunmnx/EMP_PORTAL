@@ -8,7 +8,7 @@ import { Home } from './Components/pages';
 import Master_Dashboard from './Components/Dashboards/master_dashboard.tsx';
 
 
-enum AppRoutes {
+export enum AppRoutes {
   LOGIN = '/',
   REGISTER = '/register',
   DASHBOARD = '/dashboard',
@@ -25,7 +25,7 @@ function App() {
       <Route path={AppRoutes.LOGIN} element={<Login />} />
       <Route path={AppRoutes.REGISTER} element={<Register />} />
       <Route path={AppRoutes.DASHBOARD} element={<DashboardLayout />}>
-          <Route index path={AppRoutes.DASHBOARD + AppRoutes.HOME} element={<Home/>} />
+          <Route index path={AppRoutes.DASHBOARD} element={<Home/>} />
       </Route>
       <Route path={AppRoutes.MASTER} element={<Master_Dashboard />} />
     </Routes>
