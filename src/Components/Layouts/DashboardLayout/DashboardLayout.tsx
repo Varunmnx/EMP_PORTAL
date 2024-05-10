@@ -1,8 +1,9 @@
 import './index.css'
-import { AppShell, Burger, Flex, Text } from '@mantine/core';
+import { AppShell, Burger, Button, Flex, Image, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Outlet } from 'react-router-dom';
 import { FlexBox } from '../../Flexbox/FlexBox';
+import LOGO from '../../../assets/logo.jpg'
 
 export default function DashboardLayout() {
   const [opened, { toggle }] = useDisclosure();
@@ -17,23 +18,24 @@ export default function DashboardLayout() {
     }} 
     
   >
-      <AppShell.Header bg={"red"}
+      <AppShell.Header 
       >
-      <Burger size="sm" />
         <FlexBox 
           container
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-between"
           width="100%"
           height="100%"
+          padding={"0 20px"}
         >
-          <button style={{}} className="logout-button">Logout</button>
-          <div style={{ width: "25%", height: "calc(100% - 20px)", backgroundColor: "blue"}}>
-            <img style={{ width: "50px", height: "auto", marginRight: "0.5rem" }} src="/shapelined-_JBKdviweXI-unsplash.jpg" alt="Company Logo" />
+          <FlexBox container alignItems='center'  height={"100%"} style={{gap: "10px"}}>
+      <Burger size="sm"  hiddenFrom='sm' onClick={toggle}/>
+               <Image h={28} w={28} src={LOGO} alt="Company Logo" />
                <Text size="lg">Management Company</Text>
-           </div>
+            </FlexBox>
+          <Button bg={'red'} >Logout</Button>
         </FlexBox>
-      
+       
       
 
       </AppShell.Header>
@@ -51,19 +53,9 @@ export default function DashboardLayout() {
       </AppShell.Navbar>
 
       
-      <AppShell.Main> 
-      
-      <div className="main-content">
-          {/* Employee cards */}
-          <div className="employee-card">
-            <h2>Employee Name</h2>
-            <p>ID: EMP001</p>
-            <p>Task: Task Description</p>
-            <p>Time Taken: 2 hours</p>
-          </div>
-          {/* Additional employee cards can be added here */}
-        </div>
-      </AppShell.Main>
+      <AppShell.Main mih={'100vh'}> 
+        <Outlet />
+      </AppShell.Main> 
     </AppShell>
   );
 }
